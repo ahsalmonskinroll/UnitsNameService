@@ -1,0 +1,44 @@
+body{
+    font-family: "Geist Mono", serif !important;
+    background-color: #0A0A0A !important;
+    background-image: url('elements/background.svg');
+    height: 100%;
+    background-size: cover;
+}
+
+/* fonts */
+.text-48{
+    font-size: 48px;
+    font-weight: 400;
+}
+.text-32{
+    font-size: 32px;
+}
+.text-24b{
+    font-size: 24px;
+    font-weight: 700;
+}
+.text-24{
+    font-size: 24px
+}
+.text-14{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* colors */
+.units_green{
+    color: #9FE0C1 ;
+}
+.white-t{
+    color: #F8F8F8;
+}
+.white-b{
+    background-color: #F8F8F8;
+}
+.black-b{
+    background-color: #0A0A0A;
+}
+.red{
+    color: #F69798;
+}
