@@ -339,10 +339,36 @@ input:focus {
     width: 24px;
     height: auto;
     align-items: start;
-    display: flex
-;
+    display: flex;
 }
-.address img{
-    /* width: 100%;
-    height: 100%; */
+
+/* profileClaimed */
+.profile-claim {
+    background-color: rgb(10, 10, 10);
+    border: 1px solid rgb(159, 224, 193);
+    width: 812px;
+    height: 279px;
+    padding: 0px 30px;
 }
+
+.inner-container-pC{
+    width: 718px;
+    /* height: 86px; */
+}
+
+.wallet-border{
+    width: 174px;
+    height: 40px;
+    border: 1px solid #F8F8F8;
+    z-index: 0;
+}
+.wallet-img{
+    width: 24px;
+    height: 24px;
+}
+
+.wallet-img img{
+    width: 100%;
+    height: 100%;
+}
+

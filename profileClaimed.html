@@ -36,9 +36,18 @@
               <img src="elements/Logotype.svg" alt="" />
             </div>
           </div>
-          <div class="col df je">
-            <div class="wallet white-b pointer df jc aic">
-              <div class="text-14 connect">Connect Wallet</div>
+          <div class="col df je aic">
+            <div class="wallet-border pointer df jc aic">
+              <div class="row">
+                <div class="col-auto p-0">
+                  <div class="wallet-img">
+                    <img src="elements/Icons/wallet.svg" alt="wallet icon" />
+                  </div>
+                </div>
+                <div class="col df aic">
+                  <div class="text-14 white-t connect">a93nd...28dna</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -49,47 +58,33 @@
         <div class="row">
           <div class="col-12 df jc">
             <div class="row claim-up df aic">
-                <div class="col df aic p-0">
-                    <div class="row">
-                      <div class="col-auto aic df je">
-                        <div class="check-btn">
-                          <img src="elements/Icons/Check.svg" alt="True" />
-                        </div>
-                      </div>
-                      <div class="col text-24 white-t">“name” is available.</div>
+              <div class="col df aic">
+                <div class="row df aic gap-1 pointer" id="profile">
+                  <div class="col p-0">
+                    <div class="profile-icon">
+                      <img src="elements/Icons/Profile.svg" alt="Profile" />
                     </div>
                   </div>
-
-              <div class="col je df">
-                <div class="row df aic">
                   <div class="col p-0">
-                    <div
-                      class="claim-btn text-14 black jc df aic wallet pointer"
-                      id="profile-claimed"
-                    >
-                      Claim now
-                    </div>
+                    <div class="text-24b white-t">Profile</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 df jc mt-3">
-            <div class="row profile-down">
-              <div class="col-12 jc d-grid aic inner-container">
-                <div class="text-48 units_green inner-container mt-2">
-                    name.units
+            <div class="row profile-claim ">
+              <div class="col-12 js df aic inner-container">
+                <div class="text-48 units_green mt-2">
+                  name.units
                 </div>
               </div>
-              <div class="col-12 d-grid jc">
-                <div class="inner-container">
+              <div class="col-12 d-grid jc mt-4">
                   <div class="row">
                     <div class="col-12 mb-3">
                       <div class="row">
                         <div class="col-auto">
-                          <div class="text-24b white-t">
-                            Address
-                          </div>
+                          <div class="text-24b white-t">Address</div>
                         </div>
                         <div class="col p-0 aie df">
                           <div class="line"></div>
@@ -97,12 +92,15 @@
                         <div class="col-auto">
                           <div class="text-24b white-t">
                             <div class="row">
-                                <div class="col df je">7sd7c...83bd7</div>
-                                <div class="col-auto p-0 df je">
-                                    <div class="address pointer">
-                                        <img src="elements/Icons/Address.svg" alt="icon">
-                                    </div>
+                              <div class="col df je">7sd7c...83bd7</div>
+                              <div class="col-auto p-0 df je">
+                                <div class="address pointer">
+                                  <img
+                                    src="elements/Icons/Address.svg"
+                                    alt="icon"
+                                  />
                                 </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -111,9 +109,7 @@
                     <div class="col-12 mb-3">
                       <div class="row">
                         <div class="col-auto">
-                          <div class="text-24b white-t">
-                            Ownership
-                          </div>
+                          <div class="text-24b white-t">Ownership</div>
                         </div>
                         <div class="col p-0 aie df">
                           <div class="line"></div>
@@ -121,26 +117,36 @@
                         <div class="col-auto">
                           <div class="text-24b white-t">
                             <div class="row">
-                                <div class="col df je">not owned</div>
+                              <div class="col df je">not owned</div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    
+                    <div class="col-12 mb-3">
+                      <div class="row">
+                        <div class="col-auto">
+                          <div class="text-24b white-t">Expiry</div>
+                        </div>
+                        <div class="col p-0 aie df">
+                          <div class="line"></div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-24b white-t">
+                            <div class="row">
+                              <div class="col df je">25 June 2025</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </article>
-    <script>
-        //yönlendirme
-      document.getElementById("profile-claimed").addEventListener("click", function () {
-        window.location.href = "profileClaimed.html";
-      });
-    </script>
+    
   </body>
 </html>
