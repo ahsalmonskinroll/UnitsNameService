@@ -318,11 +318,31 @@ input:focus {
 }
 
 .line{
-    height: 3px;          
+    height: 1px;          
     background: #F8F8F8;     
     width: 100%;            
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .line:hover{
     box-shadow: 0px 0px 9px 2px #888888;
+}
+
+/* profile */
+.profile-down{
+    background-color: #0A0A0A;
+    border: 1px solid #9FE0C1;
+    width: 812px;
+    height: 221px;
+}
+
+.address{
+    width: 24px;
+    height: auto;
+    align-items: start;
+    display: flex
+;
+}
+.address img{
+    /* width: 100%;
+    height: 100%; */
 }
