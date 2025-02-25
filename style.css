@@ -81,7 +81,8 @@ body {
 .red {
     color: #F69798;
 }
-.grey{
+
+.grey {
     color: #8C8C8C;
 }
 
@@ -170,7 +171,8 @@ header {
     width: 60.9px;
     height: 62.4px;
 }
-.search img{
+
+.search img {
     width: 100%;
     height: 100%;
 }
@@ -180,14 +182,147 @@ input {
     border: none;
     background-color: #0A0A0A;
     width: 100%;
-    color: #8C8C8C; /* Başlangıçta gri renk */
+    color: #8C8C8C;
+    /* Başlangıçta gri renk */
     transition: color 0.3s ease-in-out;
 }
-.input-name{
+
+.input-name {
     bottom: 10px;
     position: relative;
 }
 
 input:focus {
-    outline: none; 
+    outline: none;
+}
+
+/* check */
+.check-name {
+    height: 58px;
+    width: 812px;
+}
+
+.check-div {
+    height: 58px;
+    width: 812px;
+}
+
+.check-btn {
+    width: 20px;
+    height: 20px;
+    display: contents;
+}
+
+/* .check-btn img{
+    height: 100%;
+    width: 100%;
+} */
+.claim-btn {
+    width: 99px;
+    height: 58px;
+    background-color: #F8F8F8;
+    border: 1px solid #F8F8F8;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.clicked {
+    background-color: #FFFFFF0A !important;
+    color: #FFFFFF6E !important;
+}
+
+#infoBox {
+    display: none; /* Başlangıçta görünmez */
+    justify-content: center;
+}
+.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* claim.html */
+.claim-up{
+    width: 812px;
+    height: 54px;
+}
+.profile-icon{
+    width: 29px;
+    height: 30px;
+}
+.profile-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.claim-down{
+    background-color: #0A0A0A;
+    border: 1px solid #9FE0C1;
+    width: 812px;
+    height: 384px;
+}
+
+.inner-container{
+    width: 718px;
+    height: 86px;
+}
+
+.eth-usd{
+    /* height: 40px; */
+    justify-content: end;
+    display: flex;
+    align-items: center;
+}
+.border-button{
+    border: #F8F8F8 1px solid;
+    padding: 2px;
+}
+
+.toggle-container {
+    width: 146px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #0A0A0A;
+}
+
+.toggle-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.7s ease-in-out;
+}
+
+/* Başlangıçta ETH aktif */
+.eth {
+    background-color: #F8F8F8;
+    color: #0A0A0A;
+}
+
+.usd {
+    background-color: #0A0A0A;
+    color: #F8F8F8;
+}
+
+/* Aktif buton için stil */
+.active {
+    background-color: #F8F8F8 !important;
+    color: #0A0A0A !important;
+}
+
+.inactive {
+    background-color: #0A0A0A !important;
+    color: #F8F8F8 !important;
+}
+
+.line{
+    height: 3px;          
+    background: #F8F8F8;     
+    width: 100%;            
+    margin-top: 20px;
+}
+.line:hover{
+    box-shadow: 0px 0px 9px 2px #888888;
 }

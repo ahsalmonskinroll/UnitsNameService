@@ -29,22 +29,20 @@
   </head>
   <body>
     <header>
-        <div class="container-fluid">
-                <div class="row row-cols-2 hd">
-                    <div class="col df js">
-                        <div class="logo">
-                            <img src="elements/Logotype.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="col df je">
-                        <div class="wallet white-b pointer df jc aic">
-                            <div class="text-14 connect">
-                                Connect Wallet
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container-fluid">
+        <div class="row row-cols-2 hd">
+          <div class="col df js">
+            <div class="logo">
+              <img src="elements/Logotype.svg" alt="" />
+            </div>
+          </div>
+          <div class="col df je">
+            <div class="wallet white-b pointer df jc aic">
+              <div class="text-14 connect">Connect Wallet</div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <article>
       <div class="container">
@@ -53,17 +51,15 @@
             <div class="row row-up">
               <div class="col je df">
                 <div class="shape">
-                  <img src="elements/shape.svg" alt="shape">
+                  <img src="elements/shape.svg" alt="shape" />
                 </div>
               </div>
               <div class="col-auto jc df">
-                <div class="text-24b white-t">
-                  Get your name now
-                </div>
+                <div class="text-24b white-t">Get your name now</div>
               </div>
               <div class="col js df">
                 <div class="shape">
-                  <img src="elements/shape.svg" alt="shape">
+                  <img src="elements/shape.svg" alt="shape" />
                 </div>
               </div>
             </div>
@@ -75,27 +71,52 @@
                   <div class="row">
                     <div class="col-auto">
                       <div class="search">
-                        <img src="elements/Icons/Search.svg" alt="Search">
+                        <img src="elements/Icons/Search.svg" alt="Search" />
                       </div>
                     </div>
                     <div class="col grey text-48">
                       <div class="input-name">
-                        <input class="text-48 grey" type="text" id="nameInput" value="Claim your name" onclick="clearText()" onblur="restoreText()" oninput="changeTextColor()">
+                        <input
+                          class="text-48 grey"
+                          type="text"
+                          id="nameInput"
+                          value="Claim your name"
+                          onclick="clearText()"
+                          onblur="restoreText()"
+                          oninput="changeTextColor()"
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-auto">
-                  <div class="text-48 units_green df je">
-                    .units
-                  </div>
+                  <div class="text-48 units_green df je">.units</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12">
-            <div class="check-name">
-              ckefkdfldkd
+          <div class="col-12 df jc aic" id="infoBox">
+            <div class="check-name mt-3 df jc aic">
+              <div class="row check-div">
+                <div class="col df aic p-0">
+                  <div class="row">
+                    <div class="col-auto aic df je">
+                      <div class="check-btn">
+                        <img src="elements/Icons/Check.svg" alt="True" />
+                      </div>
+                    </div>
+                    <div class="col text-24 white-t">“name” is available.</div>
+                  </div>
+                </div>
+                <div class="col df je aic p-0">
+                  <div
+                    class="claim-btn text-14 black jc df aic wallet"
+                    id="claim"
+                  >
+                    Claim now
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -108,30 +129,53 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-    
+
     <script>
       function clearText() {
-          let input = document.getElementById("nameInput");
-          if (input.value === "Claim your name") {
-              input.value = "";
-          }
+        let input = document.getElementById("nameInput");
+        if (input.value === "Claim your name") {
+          input.value = "";
+        }
       }
 
       function restoreText() {
-          let input = document.getElementById("nameInput");
-          if (input.value === "") {
-              input.value = "Claim your name";
-          }
+        let input = document.getElementById("nameInput");
+        if (input.value === "") {
+          input.value = "Claim your name";
+        }
       }
 
       function changeTextColor() {
-            let input = document.getElementById("nameInput");
-            if (input.value.length > 0) {
-                input.style.color = "#9FE0C1"; 
-            } else {
-                input.style.color = "#8C8C8C";
-            }
+        let input = document.getElementById("nameInput");
+        if (input.value.length > 0) {
+          input.style.color = "#9FE0C1";
+        } else {
+          input.style.color = "#8C8C8C";
         }
-  </script>
+      }
+
+      //check div
+      const input = document.getElementById("nameInput");
+      const infoBox = document.getElementById("infoBox");
+
+      input.addEventListener("input", function () {
+        if (input.value.trim() !== "") {
+          infoBox.style.display = "flex";
+        } else {
+          infoBox.style.display = "none";
+        }
+      });
+
+      const button = document.getElementById("claim");
+
+      button.addEventListener("click", function () {
+        button.classList.add("clicked"); 
+      });
+
+      //yönlendirme
+      document.getElementById("claim").addEventListener("click", function() {
+        window.location.href = "claim.html"; 
+    });
+    </script>
   </body>
 </html>
