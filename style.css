@@ -1,4 +1,4 @@
-body{
+body {
     font-family: "Geist Mono", serif !important;
     background-color: #0A0A0A !important;
     background-image: url('elements/background.svg');
@@ -7,93 +7,187 @@ body{
 }
 
 /* genel */
-.pointer{
+.pointer {
     cursor: pointer;
 }
-.jc{
+
+.jc {
     justify-content: center;
 }
-.js{
+
+.js {
     justify-content: start;
 }
-.je{
+
+.je {
     justify-content: end;
 }
-.df{
+
+.df {
     display: flex;
 }
-.aic{
+
+.aic {
     align-items: center;
 }
 
 /* fonts */
-.text-48{
+.text-48 {
     font-size: 48px;
     font-weight: 400;
 }
-.text-32{
+
+.text-48g {
+    font-size: 48px;
+    font-weight: 400;
+    color: #8C8C8C;
+}
+
+.text-32 {
     font-size: 32px;
 }
-.text-24b{
+
+.text-24b {
     font-size: 24px;
     font-weight: 700;
 }
-.text-24{
+
+.text-24 {
     font-size: 24px
 }
-.text-14{
+
+.text-14 {
     font-size: 14px;
     font-weight: 700;
 }
 
 /* colors */
-.units_green{
-    color: #9FE0C1 ;
+.units_green {
+    color: #9FE0C1;
 }
-.white-t{
+
+.white-t {
     color: #F8F8F8;
 }
-.white-b{
+
+.white-b {
     background-color: #F8F8F8;
 }
-.black-b{
+
+.black-b {
     background-color: #0A0A0A;
 }
-.red{
+
+.red {
     color: #F69798;
+}
+.grey{
+    color: #8C8C8C;
 }
 
 /* header */
 header {
     background: linear-gradient(to bottom, #0A0A0A, #0A0A0A00);
-    height: 122px; /* Header boyutunu ayarla */
-  }
-  
-.hd{
+    height: 122px;
+    /* Header boyutunu ayarla */
+}
+
+.hd {
     height: 122px;
     padding: 32px 80px;
 }
-.logo{
+
+.logo {
     width: 450px;
     height: auto;
 }
-.logo img{
+
+.logo img {
     width: 100%;
     height: 100%;
 }
-.wallet{
+
+.wallet {
     width: 140px;
     height: 58px;
     border: 1px solid #F8F8F8;
     z-index: 0;
 }
-.wallet:hover{
+
+.wallet:hover {
     background-color: #FFFFFF1F;
     color: #FFFFFF;
-    transition: 1s;
+    transition: 0.5s;
 }
-.wallet:active{
+
+.wallet:active {
     background-color: #FFFFFF0A;
     color: #FFFFFF6E;
-    transition: 1s;
+    transition: 0.5s;
+}
+
+/* ARTICLE */
+/* up */
+.article {
+    height: 123px;
+}
+
+.row-up {
+    gap: 51px;
+    padding: 40px 0px;
+}
+
+.shape {
+    width: 22px;
+    height: 43px;
+}
+
+.shape img {
+    width: 100%;
+    height: 100%;
+}
+
+/* down */
+.down-div {
+    height: 141px;
+    width: 812px;
+    border: 1px solid #9FE0C1;
+    padding: 31px 30px;
+    background-color: #0A0A0A;
+}
+
+.down-div:hover {
+    box-shadow: 0px 0px 20px 2px #888888;
+    transition: 0.5s;
+}
+
+.down-div:active {
+    border: #F8F8F8 1px solid;
+    box-shadow: 0px 0px 4px 0px #888888;
+}
+
+.search {
+    width: 60.9px;
+    height: 62.4px;
+}
+.search img{
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    background-color: #0A0A0A;
+    width: 100%;
+    color: #8C8C8C; /* Başlangıçta gri renk */
+    transition: color 0.3s ease-in-out;
+}
+.input-name{
+    bottom: 10px;
+    position: relative;
+}
+
+input:focus {
+    outline: none; 
 }
